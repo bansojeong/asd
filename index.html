@@ -6,46 +6,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/hover.css">
 </head>
 <body>
-    
-    <div class="container">
-        <article class="start">
-            <h1 class="mt-5 text-center">나랑 닮은 동물은?</h1>
-            <button class="btn btn-outline-warning mt-5" onclick="start();">
-                테스트 시작하기
-            </button>
-        </article>
-
-        <article class="question mt-5">
-            <div class="progress">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            <h2 id="title" class="text-center mt-5">문제</h2>
-
-            <input type="hidden" id="type" value="EI">
-            
-
-            <button id="A" class="btn btn-outline-warning mt-5">
-                primary
-            </button>
-            <button id="B" class="btn btn-outline-warning mt-5">
-                primary
-            </button>
-        </article>
+    <header class="bg">
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-md navbar-light">
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo.svg">
+                </a>
+                <!--logo-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--goust btn end-->
+                <div class="collapse navbar-collapse justify-content-end" id="nav-content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link hvr-underline-from-left">소개</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link hvr-underline-from-left">SKT상품</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link hvr-underline-from-left">전체상품보기</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link hvr-underline-from-left">고객센터ˇ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--nav container end-->
+            </nav>
+        </div>
+            <!--nav end-->
+    </header>
+    <div class="bgimg-2">
+        <div class="caption">
+        </div>
     </div>
-
-    <script src="js/script.js"></script>
-    <!--jQuery library-->
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-
-    <!--Popper JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
-    <!--Latest compiled JavaScript-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-
+    <div class="bgimg-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="text1">
+                        <h1>할인과혜택</h1>
+                    </div>
+                    <div class="text2 text-center">
+                        <h2>SK텔레콤 클라우드 마켓플레이스 상품 구매 시, 특별 할인가 적용 등 풍성한 혜택을 만나보세요.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bgimg-4">
+        <div class="container">
+            <div class="bgimg-4-img">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="img1">
+                            <img src="images/img1.png" class="hvr-grow">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img2">
+                            <img src="images/img1.png" class="hvr-grow">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img3">
+                            <img src="images/img1.png" class="hvr-grow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bgimg-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text3 text-center">
+                        <h1>추천상품</h1>
+                    </div>
+                    <div class="text4 text-center">
+                        <h2>SK텔레콤이 엄선한 상품으로 쉽고 편리하게 클라우드 서비스를 이용해 보세요.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="bgimg-5-img">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="img4">
+                            <img src="images/img2.png" class="hvr-glow">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img5">
+                            <img src="images/img2.png" class="hvr-glow">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img6">
+                            <img src="images/img2.png" class="hvr-glow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bgimg-5-1-img">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="img7">
+                            <img src="images/20210416_152934.png" class="hvr-glow">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img8">
+                            <img src="images/20210416_152934.png" class="hvr-glow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bgimg-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text5 text-center">
+                        <h1>SK텔레콤 상품</h1>
+                    </div>
+                    <div class="text6 text-center">
+                        <h2>SK텔레콤의 AI, IoT, Networking, Database 등 클라우드 기반의 다양한 상품을 만나보세요.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bgimg-7">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="img9">
+                        <img src="images/20210416_164454.png">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="img10">
+                        <img src="images/20210416_164454.png">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="img11">
+                        <img src="images/20210416_164454.png">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Swiper -->
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/20210416_164454.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/20210416_164454.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/20210416_164454.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/20210416_164454.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/20210416_164454.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/20210416_164454.png">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/style.js"></script>
 </body>
 </html>
